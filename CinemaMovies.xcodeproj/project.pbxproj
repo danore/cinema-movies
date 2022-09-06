@@ -13,6 +13,7 @@
 		4AC12C0E28C7ABE0001798C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC12C0D28C7ABE0001798C6 /* Preview Assets.xcassets */; };
 		4AC12C1028C7ABE0001798C6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC12C0F28C7ABE0001798C6 /* Persistence.swift */; };
 		4AC12C1328C7ABE0001798C6 /* CinemaMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AC12C1128C7ABE0001798C6 /* CinemaMovies.xcdatamodeld */; };
+		4AC12C1D28C7B8DF001798C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC12C1C28C7B8DF001798C6 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		4AC12C0D28C7ABE0001798C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4AC12C0F28C7ABE0001798C6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		4AC12C1228C7ABE0001798C6 /* CinemaMovies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CinemaMovies.xcdatamodel; sourceTree = "<group>"; };
+		4AC12C1C28C7B8DF001798C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,9 @@
 		4AC12C0528C7ABDC001798C6 /* CinemaMovies */ = {
 			isa = PBXGroup;
 			children = (
-				4AC12C0628C7ABDC001798C6 /* CinemaMoviesApp.swift */,
-				4AC12C0828C7ABDC001798C6 /* ContentView.swift */,
-				4AC12C0A28C7ABE0001798C6 /* Assets.xcassets */,
-				4AC12C0F28C7ABE0001798C6 /* Persistence.swift */,
-				4AC12C1128C7ABE0001798C6 /* CinemaMovies.xcdatamodeld */,
+				4AC12C1B28C7B8B2001798C6 /* SupportFiles */,
+				4AC12C1A28C7B8AA001798C6 /* Source */,
+				4AC12C1928C7B89D001798C6 /* Resources */,
 				4AC12C0C28C7ABE0001798C6 /* Preview Content */,
 			);
 			path = CinemaMovies;
@@ -71,6 +71,73 @@
 				4AC12C0D28C7ABE0001798C6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4AC12C1928C7B89D001798C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4AC12C0A28C7ABE0001798C6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4AC12C1A28C7B8AA001798C6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4AC12C2128C7B917001798C6 /* ViewModels */,
+				4AC12C2028C7B90D001798C6 /* Models */,
+				4AC12C1F28C7B908001798C6 /* Views */,
+				4AC12C1E28C7B8FF001798C6 /* CoreData */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4AC12C1B28C7B8B2001798C6 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4AC12C0628C7ABDC001798C6 /* CinemaMoviesApp.swift */,
+				4AC12C1C28C7B8DF001798C6 /* AppDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		4AC12C1E28C7B8FF001798C6 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4AC12C2428C7B943001798C6 /* Config */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		4AC12C1F28C7B908001798C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4AC12C0828C7ABDC001798C6 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4AC12C2028C7B90D001798C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4AC12C2128C7B917001798C6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4AC12C2428C7B943001798C6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4AC12C0F28C7ABE0001798C6 /* Persistence.swift */,
+				4AC12C1128C7ABE0001798C6 /* CinemaMovies.xcdatamodeld */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +213,7 @@
 				4AC12C1028C7ABE0001798C6 /* Persistence.swift in Sources */,
 				4AC12C1328C7ABE0001798C6 /* CinemaMovies.xcdatamodeld in Sources */,
 				4AC12C0928C7ABDC001798C6 /* ContentView.swift in Sources */,
+				4AC12C1D28C7B8DF001798C6 /* AppDelegate.swift in Sources */,
 				4AC12C0728C7ABDC001798C6 /* CinemaMoviesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
