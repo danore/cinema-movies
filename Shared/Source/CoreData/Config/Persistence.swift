@@ -12,7 +12,7 @@ public class PersistenceController {
     static let shared = PersistenceController()
     
     let container: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "cinema-movies")
+        let container = NSPersistentContainer(name: "CinemaMovies")
         
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
