@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4A41A84B28DB712A003113A6 /* TopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41A84A28DB712A003113A6 /* TopMenuView.swift */; };
-		4A41A84E28DB7D3A003113A6 /* HomeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41A84D28DB7D3A003113A6 /* HomeButtonStyle.swift */; };
+		4A41A84E28DB7D3A003113A6 /* TopMenuButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41A84D28DB7D3A003113A6 /* TopMenuButtonStyle.swift */; };
+		4A41A85528DB87FD003113A6 /* TabEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41A85428DB87FD003113A6 /* TabEnum.swift */; };
+		4A41A85628DB880A003113A6 /* TabEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41A85428DB87FD003113A6 /* TabEnum.swift */; };
+		4A41A85928DB92A9003113A6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41A85828DB92A9003113A6 /* HomeView.swift */; };
+		4A41A85B28DB9F9B003113A6 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41A85A28DB9F9B003113A6 /* AppState.swift */; };
 		4AC12C0728C7ABDC001798C6 /* CinemaMoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC12C0628C7ABDC001798C6 /* CinemaMoviesApp.swift */; };
 		4AC12C0928C7ABDC001798C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC12C0828C7ABDC001798C6 /* ContentView.swift */; };
 		4AC12C0B28C7ABE0001798C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC12C0A28C7ABE0001798C6 /* Assets.xcassets */; };
@@ -26,11 +30,17 @@
 		4AC3ECCA28D2336000C49D3F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC12C0F28C7ABE0001798C6 /* Persistence.swift */; };
 		4AC3ECCB28D2336500C49D3F /* CinemaMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AC12C1128C7ABE0001798C6 /* CinemaMovies.xcdatamodeld */; };
 		4AC3ECCE28D2339C00C49D3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3ECCD28D2339C00C49D3F /* AppDelegate.swift */; };
+		4ACD50E628DCB6A000610195 /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD50E528DCB6A000610195 /* GridStack.swift */; };
+		4ACD50E828DCB6CE00610195 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD50E728DCB6CE00610195 /* CardView.swift */; };
+		4ACD50EA28DCB72900610195 /* PressHandlingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD50E928DCB72900610195 /* PressHandlingStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A41A84A28DB712A003113A6 /* TopMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuView.swift; sourceTree = "<group>"; };
-		4A41A84D28DB7D3A003113A6 /* HomeButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonStyle.swift; sourceTree = "<group>"; };
+		4A41A84D28DB7D3A003113A6 /* TopMenuButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuButtonStyle.swift; sourceTree = "<group>"; };
+		4A41A85428DB87FD003113A6 /* TabEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabEnum.swift; sourceTree = "<group>"; };
+		4A41A85828DB92A9003113A6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4A41A85A28DB9F9B003113A6 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		4AC12C0328C7ABDC001798C6 /* CinemaMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC12C0628C7ABDC001798C6 /* CinemaMoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaMoviesApp.swift; sourceTree = "<group>"; };
 		4AC12C0828C7ABDC001798C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +58,9 @@
 		4AC3ECB928D0EB4B00C49D3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AC3ECBC28D0EB4B00C49D3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4AC3ECCD28D2339C00C49D3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4ACD50E528DCB6A000610195 /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
+		4ACD50E728DCB6CE00610195 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4ACD50E928DCB72900610195 /* PressHandlingStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressHandlingStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +93,8 @@
 		4A41A84C28DB7D27003113A6 /* ButtonStyles */ = {
 			isa = PBXGroup;
 			children = (
-				4A41A84D28DB7D3A003113A6 /* HomeButtonStyle.swift */,
+				4A41A84D28DB7D3A003113A6 /* TopMenuButtonStyle.swift */,
+				4ACD50E928DCB72900610195 /* PressHandlingStyle.swift */,
 			);
 			path = ButtonStyles;
 			sourceTree = "<group>";
@@ -89,16 +103,34 @@
 			isa = PBXGroup;
 			children = (
 				4A41A84A28DB712A003113A6 /* TopMenuView.swift */,
+				4ACD50E528DCB6A000610195 /* GridStack.swift */,
+				4ACD50E728DCB6CE00610195 /* CardView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4A41A85128DB87AC003113A6 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4A41A85428DB87FD003113A6 /* TabEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		4A41A85728DB929B003113A6 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				4A41A85828DB92A9003113A6 /* HomeView.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 		4AC12BFA28C7ABDC001798C6 = {
 			isa = PBXGroup;
 			children = (
-				4AC3ECC628D2328F00C49D3F /* Shared */,
 				4AC12C0528C7ABDC001798C6 /* CinemaMovies */,
 				4AC3ECB428D0EB4900C49D3F /* CinemaMoviesTV */,
+				4AC3ECC628D2328F00C49D3F /* Shared */,
 				4AC12C0428C7ABDC001798C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -225,6 +257,7 @@
 		4AC3ECC728D232AE00C49D3F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4A41A85128DB87AC003113A6 /* Enums */,
 				4AC3ECC828D232B500C49D3F /* Networking */,
 				4AC12C2128C7B917001798C6 /* ViewModels */,
 				4AC12C2028C7B90D001798C6 /* Models */,
@@ -248,6 +281,7 @@
 			children = (
 				4AC3ECB528D0EB4900C49D3F /* CinemaMoviesTVApp.swift */,
 				4AC3ECCD28D2339C00C49D3F /* AppDelegate.swift */,
+				4A41A85A28DB9F9B003113A6 /* AppState.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -272,6 +306,7 @@
 		4AC3ECD128D233BC00C49D3F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4A41A85728DB929B003113A6 /* HomeView */,
 				4AC3ECB728D0EB4900C49D3F /* ContentView.swift */,
 			);
 			path = Views;
@@ -377,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A41A85528DB87FD003113A6 /* TabEnum.swift in Sources */,
 				4AC12C1028C7ABE0001798C6 /* Persistence.swift in Sources */,
 				4AC12C1328C7ABE0001798C6 /* CinemaMovies.xcdatamodeld in Sources */,
 				4AC12C0928C7ABDC001798C6 /* ContentView.swift in Sources */,
@@ -392,12 +428,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A41A85928DB92A9003113A6 /* HomeView.swift in Sources */,
+				4A41A85B28DB9F9B003113A6 /* AppState.swift in Sources */,
 				4AC3ECB828D0EB4900C49D3F /* ContentView.swift in Sources */,
 				4AC3ECB628D0EB4900C49D3F /* CinemaMoviesTVApp.swift in Sources */,
 				4AC3ECCA28D2336000C49D3F /* Persistence.swift in Sources */,
-				4A41A84E28DB7D3A003113A6 /* HomeButtonStyle.swift in Sources */,
+				4A41A84E28DB7D3A003113A6 /* TopMenuButtonStyle.swift in Sources */,
+				4ACD50E628DCB6A000610195 /* GridStack.swift in Sources */,
+				4A41A85628DB880A003113A6 /* TabEnum.swift in Sources */,
 				4A41A84B28DB712A003113A6 /* TopMenuView.swift in Sources */,
+				4ACD50EA28DCB72900610195 /* PressHandlingStyle.swift in Sources */,
 				4AC3ECCE28D2339C00C49D3F /* AppDelegate.swift in Sources */,
+				4ACD50E828DCB6CE00610195 /* CardView.swift in Sources */,
 				4AC3ECCB28D2336500C49D3F /* CinemaMovies.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

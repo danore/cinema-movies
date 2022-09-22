@@ -1,5 +1,5 @@
 //
-//  HomeButtonStyle.swift
+//  TopMenuButtonStyle.swift
 //  CinemaMoviesTV
 //
 //  Created by Daniel Orellana on 21/09/22.
@@ -7,15 +7,16 @@
 
 import SwiftUI
 
-struct HomeButtonStyle: ButtonStyle {
+struct TopMenuButtonStyle: ButtonStyle {
     let onFocusChange: (Bool) -> Void
     @Environment(\.isFocused) private var focused: Bool
+    var currentTab: Tab
 
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .overlay(
                 Rectangle()
-                    .frame(height: focused ? 3 : .zero)
+                    .frame(height: (focused || AppState.shared.selectedTab == currentTab) ? 3 : .zero)
                     .offset(y: 4),
                 alignment: .bottom
             )
