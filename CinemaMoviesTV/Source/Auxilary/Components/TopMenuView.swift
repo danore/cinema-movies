@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct TopMenuView: View {
-    
+    @FocusState var focused
+    @Binding var currentTab: Tab
     
     var body: some View {
         ZStack {
@@ -24,21 +25,29 @@ struct TopMenuView: View {
                     Button {} label: {
                         Text("HOME")
                     }
-                    .buttonStyle(HomeButtonStyle(onFocusChange: { isFocused in
-                        
-                    }))
+                    .buttonStyle(TopMenuButtonStyle(onFocusChange: { isFocused in
+                        guard isFocused else { return }
+                        currentTab = .home
+                        AppState.shared.selectedTab = .home
+                    }, currentTab: .home))
                     
-                    Button { } label: {}
-                    .buttonStyle(HomeButtonStyle(onFocusChange: { isFocused in
-                        
-                    }))
+                    Button { } label: {
+                        Text("SERIES")
+                    }
+                    .buttonStyle(TopMenuButtonStyle(onFocusChange: { isFocused in
+                        guard isFocused else { return }
+                        currentTab = .series
+                        AppState.shared.selectedTab = .series
+                    }, currentTab: .series))
                     
                     Button {} label: {
                         Text("GAMES")
                     }
-                    .buttonStyle(HomeButtonStyle(onFocusChange: { isFocused in
-                        
-                    }))
+                    .buttonStyle(TopMenuButtonStyle(onFocusChange: { isFocused in
+                        guard isFocused else { return }
+                        currentTab = .games
+                        AppState.shared.selectedTab = .games
+                    }, currentTab: .games))
 
                 }
                 
@@ -50,7 +59,12 @@ struct TopMenuView: View {
                     Image(systemName: "person")
                         .renderingMode(.original)
                 }
-                .buttonStyle(.plain)
+                .padding(.trailing, 25)
+                .buttonStyle(TopMenuButtonStyle(onFocusChange: { isFocused in
+                    guard isFocused else { return }
+                    currentTab = .profile
+                    AppState.shared.selectedTab = .profile
+                }, currentTab: .profile))
             }
         }
         .frame(height: 100)
@@ -59,6 +73,6 @@ struct TopMenuView: View {
 
 struct TopMenuView_Previews: PreviewProvider {
     static var previews: some View {
-        TopMenuView()
+        TopMenuView(currentTab: .constant(.home))
     }
 }
