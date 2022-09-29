@@ -14,5 +14,6 @@ class AppState: ObservableObject {
     private init() {}
     
     @Published var selectedTab: Tab = .home
+    @Published var isMenuSelected: Bool = true
     
 }

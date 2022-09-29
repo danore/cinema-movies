@@ -7,22 +7,20 @@
 
 import SwiftUI
 
-struct TopMenuButtonStyle: ButtonStyle {
+struct TopMenuItemStyle: ButtonStyle {
     let onFocusChange: (Bool) -> Void
     @Environment(\.isFocused) private var focused: Bool
-    var currentTab: Tab
 
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .overlay(
                 Rectangle()
-                    .frame(height: (focused || AppState.shared.selectedTab == currentTab) ? 3 : .zero)
+                    .frame(height: focused ? 3 : .zero)
                     .offset(y: 4),
                 alignment: .bottom
             )
             .contentShape(Rectangle())
-            .padding(.horizontal, focused ? 30 : .zero)
-            .scaleEffect(focused ? 1.5 : 1.0)
+            .scaleEffect(focused ? 1.3 : 1.0)
             .animation(.easeIn(duration: 0.5), value: focused)
             .onChange(of: focused) { newValue in
                 onFocusChange(newValue)

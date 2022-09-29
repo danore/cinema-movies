@@ -8,14 +8,15 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
-    @State var selection: Tab
+struct MainView: View {
+    @State private var currentTab: Tab = .home
     
     var body: some View {
         VStack {
-            TopMenuView(currentTab: $selection)
-            
-            switch selection {
+            TopMenuView()
+                .frame(height: 100)
+
+            switch currentTab {
             case .home:
                 HomeView()
             case .series:
@@ -25,15 +26,20 @@ struct ContentView: View {
             case .profile:
                 Color.green
             }
-            
+
             Spacer()
-        }.ignoresSafeArea()
+        }
+        .ignoresSafeArea()
+        .onReceive(AppState.shared.$selectedTab) { tab in
+            currentTab = tab
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(selection: .home)
+        MainView()
     }
 }
+
 
