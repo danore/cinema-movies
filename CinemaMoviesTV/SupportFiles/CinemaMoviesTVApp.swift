@@ -14,7 +14,7 @@ struct CinemaMoviesTVApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView(selection: .home)
+            MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
